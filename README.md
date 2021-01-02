@@ -26,3 +26,13 @@
 
 - aws cli
     - deploy to bucket ⇒ cd build && AWS_PROFILE=jam aws s3 sync . s3://jamstack-dkim22
+
+### terraform
+
+- jamstack-terraform-dkim22 버킷 직접 생성후
+  - main.tf 버킷을 미리 만들어 둬야 AWS_PROFILE=jam terraform init 이 가능함
+- AWS_PROFILE=jam terraform init
+- AWS_PROFILE=jam terraform plan
+- AWS_PROFILE=jam terraform apply
+  - 엑세스 안될 때는 aws_iam_policy_document를 한번 지우고 다시 만듦
+- AWS_PROFILE=jam terraform destroy
