@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Permission chmod +x ./deploy.sh in ci env
+
 # setting ENVs
 # if this current build is from the git development branch
 # then use the shared keys
